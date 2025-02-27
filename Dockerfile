@@ -18,11 +18,11 @@ WORKDIR /app/
 
 RUN chmod +x /app/start_server.sh
 
-COPY ./ssl/fullchain.pem /ssl/fullchain.pem
-COPY ./ssl/privkey.pem /ssl/privkey.pem
+# COPY ./ssl/fullchain.pem /ssl/fullchain.pem
+# COPY ./ssl/privkey.pem /ssl/privkey.pem
 
-ENV GRANIAN_SSL_CERTIFICATE=/ssl/fullchain.pem
-ENV GRANIAN_SSL_KEYFILE=/ssl/privkey.pem
+# ENV GRANIAN_SSL_CERTIFICATE=/ssl/fullchain.pem
+# ENV GRANIAN_SSL_KEYFILE=/ssl/privkey.pem
 
 EXPOSE 80
 EXPOSE 443
